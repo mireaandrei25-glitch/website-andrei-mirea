@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Website personal – Andrei Mirea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2a5298;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #1e3c72;
+        }
+        .images {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .images img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .links a {
+            display: block;
+            margin: 5px 0;
+            color: #2a5298;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2a5298;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1e3c72;
+        }
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="acasa">
+    <h1>Andrei Mirea</h1>
+    <p>Student – Academia de Studii Economice din București</p>
+</header>
+
+<nav>
+    <!-- 4 link-uri interne -->
+    <a href="#acasa">Acasă</a>
+    <a href="#despre">Despre mine</a>
+    <a href="#resurse">Resurse</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="despre">
+    <h2>Despre mine</h2>
+    <p>
+        Mă numesc Andrei Mirea, sunt student în anul I la Academia de Studii Economice din București.
+        Sunt o persoană ambițioasă, comunicativă și interesată de dezvoltarea competențelor digitale și economice.
+    </p>
+</section>
+
+<section id="imagini">
+    <h2>Imagini</h2>
+    <div class="images">
+        <!-- Poza 1 -->
+        <div>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Tehnologie">
+            <p>Sursă imagine: <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
+        </div>
+        <!-- Poza 2 -->
+        <div>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Lucru în echipă">
+            <p>Sursă imagine: <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="resurse">
+    <h2>Link-uri utile</h2>
+
+    <h3>Link-uri interne</h3>
+    <div class="links">
+        <a href="#acasa">Acasă</a>
+        <a href="#despre">Despre mine</a>
+        <a href="#imagini">Imagini</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <h3>Link-uri externe</h3>
+    <div class="links">
+        <a href="https://www.ase.ro" target="_blank">Academia de Studii Economice</a>
+        <a href="https://europa.eu/europass/ro" target="_blank">Europass</a>
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+</section>
+
+<section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <p>
+        CV-ul meu în format Europass poate fi descărcat de aici:
+    </p>
+    <a href="CV Andrei Mirea.pdf" download>Descarcă CV Europass (PDF)</a>
+</section>
+
+<section id="contact">
+    <h2>Formular de contact</h2>
+    <!-- Formular care trimite email -->
+    <form action="mailto:mirea.andrei01@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="Nume" placeholder="Numele tău" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Mesaj" rows="5" placeholder="Mesajul tău" required></textarea>
+        <button type="submit">Trimite mesaj</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 – Website realizat de Andrei Mirea</p>
+</footer>
+
+</body>
+</html>
